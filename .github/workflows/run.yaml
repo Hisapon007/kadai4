@@ -1,7 +1,8 @@
-name: kadai4-github-actions
-on: [push]
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - run: sh /home/z22084kh/kadai4/test_gcd.sh
+    build:
+        name: build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Run sh
+              run: sh test_gcd.sh
