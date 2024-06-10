@@ -22,7 +22,7 @@ check_number() {
   if [[ "$1" =~ $pattern ]] >&/dev/null;then
     return 0
   else
-    echo "引数が自然数ではありません。###"
+    echo "引数が自然数ではありません。"
     exit 1
   fi
 }
