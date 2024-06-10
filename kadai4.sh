@@ -5,7 +5,7 @@
 #
 
 # 自然数かどうかの正規表現
-pattern="^[1-9]+$"
+pattern="^[1-9][0-9]*$"
 
 # 引数が2つかチェック
 check_argument_number() {
